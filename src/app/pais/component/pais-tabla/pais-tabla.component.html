@@ -1,0 +1,22 @@
+<table class="table table-hover table-light animate__animated animate__bounceInLeft">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Bandera</th>
+            <th>Nombre</th>
+            <th>Poblacion</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of paises; let i = index">
+            <td>{{i+1}}</td>
+            <td>
+                <img class="small-flag" [src]="item.flag">
+            </td>
+            <td>{{ item.name }}, {{ item.capital }}</td>
+            <td>{{ item.population | number }}</td>
+            <td><a [routerLink]="['/pais', item.alpha2Code]">Ver...</a></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,40 @@
+h5, h3{
+    color: white;
+}
+small{
+    color: red;
+}
+.btn-grad {
+     background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #eee;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-grad2{
+    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.btn-grad2:hover {
+   background-position: right center;
+   color: black;
+   text-decoration: none;
+}
